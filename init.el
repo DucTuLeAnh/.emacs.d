@@ -17,4 +17,5 @@
 (require 'init-evil)
 (require 'init-projectile)
 (require 'init-counsel)
+(require 'init-org)
 

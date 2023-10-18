@@ -20,4 +20,3 @@
 (require 'init-org)
 (require 'init-magit)
 (require 'init-lsp)
-

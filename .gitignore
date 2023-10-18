@@ -2,3 +2,6 @@
 projectile-bookmarks.eld
 /transient
 *.~undo-tree~
+.cache
+.lsp-session-v1
+auto-save-list/

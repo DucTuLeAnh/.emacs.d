@@ -21,3 +21,5 @@
 (require 'init-magit)
 (require 'init-lsp)
 (require 'init-which-key)
+(require 'init-web-mode)
+(require 'init-treemacs)

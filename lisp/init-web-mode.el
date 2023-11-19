@@ -13,6 +13,21 @@
 (setq web-mode-content-types-alist '(("jsx" . "\\.js[x]?\\'")))
 
 
+(unless (package-installed-p 'yaml-mode)
+  (package-install 'yaml-mode))
+
+(require 'yaml-mode)
+(defun setup-yaml-mode ()
+  (interactive)
+  (company-mode 1)
+  (diff-hl-mode 1)
+  (flycheck-mode 1)
+  (highlight-indentation-mode 1)
+)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+(add-hook 'yaml-mode-hook #'setup-yaml-mode)
+
 
 
 (provide 'init-web-mode)

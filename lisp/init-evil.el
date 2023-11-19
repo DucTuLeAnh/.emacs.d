@@ -5,6 +5,7 @@
 (unless (package-installed-p 'undo-tree)
   (package-install 'undo-tree))
 (require 'undo-tree)
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 
 ;; custom evil settings must be set before evil loads
 (setq evil-want-C-u-scroll t)

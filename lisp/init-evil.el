@@ -16,5 +16,9 @@
 (evil-mode 1)
 (global-undo-tree-mode 1)
 (evil-set-initial-state 'xref--xref-buffer-mode 'emacs)
+(evil-set-initial-state 'emacs-lisp-mode 'emacs)
+(evil-set-initial-state 'lisp-mode 'emacs)
+(evil-set-initial-state 'lisp-interaction-mode 'emacs)
+(evil-set-initial-state 'scheme-mode 'emacs)
 
 (provide 'init-evil)

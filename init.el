@@ -11,7 +11,6 @@
 (unless package-archive-contents
  (package-refresh-contents))
 
-(test 2 3)
 
 ;; init lisp directory
 (require 'init-defaults)

@@ -11,10 +11,10 @@
 (unless package-archive-contents
  (package-refresh-contents))
 
+(test 2 3)
 
 ;; init lisp directory
 (require 'init-defaults)
-(require 'init-evil)
 (require 'init-projectile)
 (require 'init-counsel)
 (require 'init-org)

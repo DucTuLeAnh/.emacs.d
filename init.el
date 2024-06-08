@@ -24,4 +24,4 @@
 (require 'init-treemacs)
 (require 'init-company)
 (require 'init-slime)
-(require 'init-latex)
+

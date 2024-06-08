@@ -16,4 +16,4 @@
 
 
 
-(provide 'init-latex)
+(provide 'init-mysnippets)

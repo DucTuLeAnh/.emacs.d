@@ -13,4 +13,10 @@
 
 (load-theme 'dracula t)
 
+(unless (package-installed-p 'expand-region)
+  (package-install 'expand-region))
+
+(global-set-key (kbd "C-<") 'er/expand-region)
+
+
 (provide 'init-defaults)

@@ -8,6 +8,7 @@
   (message "%s" (org-agenda-files)))
 
 (global-set-key (kbd "C-c l") 'show-agenda-files)
+(global-set-key (kbd "C-c a") 'org-agenda)
 
 
 (provide 'init-org)

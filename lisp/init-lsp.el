@@ -29,6 +29,7 @@
 (require 'dap-chrome)
 (dap-chrome-setup)
 
+(add-hook 'web-mode-hook 'lsp-mode)
 
 
 (provide 'init-lsp)

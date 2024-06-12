@@ -7,6 +7,8 @@
 
 
 (require 'dap-mode)
+(require 'dap-ui)
+(require 'dap-mouse)
 
 (dap-mode 1)
 ;; The modes below are optional

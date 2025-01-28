@@ -21,7 +21,5 @@
 (require 'init-lsp)
 (require 'init-which-key)
 (require 'init-web-mode)
-(require 'init-treemacs)
 (require 'init-company)
 (require 'init-slime)
-

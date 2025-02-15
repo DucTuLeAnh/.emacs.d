@@ -7,6 +7,8 @@
 (menu-bar-mode -1)   	 ; Disable the menu bar
 (column-number-mode)
 (global-display-line-numbers-mode t)
+(set-default 'truncate-lines t)
+(put 'scroll-left 'disabled nil)
 
 (unless (package-installed-p 'dracula-theme)
   (package-install 'dracula-theme))

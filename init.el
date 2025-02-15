@@ -23,3 +23,4 @@
 (require 'init-web-mode)
 (require 'init-company)
 (require 'init-slime)
+(require 'init-dockerfile-mode)

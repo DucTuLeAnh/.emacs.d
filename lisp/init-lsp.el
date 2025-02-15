@@ -2,6 +2,8 @@
   (package-install 'lsp-mode))
 
 (setq lsp-keymap-prefix "C-c l")
+(global-set-key (kbd "C-.") 'lsp-find-references)
+(global-set-key (kbd "C-,") 'lsp-find-definition)
 ;;(setq xref-auto-jump-to-first-xref t)
 (require 'lsp-mode)
 
@@ -22,14 +24,9 @@
 ;; requies emacs 26+
 (dap-ui-controls-mode 1)
 
-(require 'dap-node)
-
-(dap-node-setup)
-
-(require 'dap-chrome)
-(dap-chrome-setup)
-
 (add-hook 'web-mode-hook 'lsp-mode)
 
+(require 'dap-node)
+(dap-node-setup)
 
 (provide 'init-lsp)

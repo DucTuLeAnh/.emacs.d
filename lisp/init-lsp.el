@@ -24,7 +24,12 @@
 ;; requies emacs 26+
 (dap-ui-controls-mode 1)
 
-(add-hook 'web-mode-hook 'lsp-mode)
+(add-hook 'web-mode-hook
+          (lambda ()
+            (run-at-time 0 nil #'lsp)))
+
+
+
 
 (require 'dap-node)
 (dap-node-setup)

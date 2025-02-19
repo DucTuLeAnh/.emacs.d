@@ -23,3 +23,4 @@
 (require 'init-company)
 (require 'init-slime)
 (require 'init-lsp)
+(require 'init-vterm)

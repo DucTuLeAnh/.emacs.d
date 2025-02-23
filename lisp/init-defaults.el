@@ -21,6 +21,10 @@
 (require 'expand-region)
 
 (global-set-key (kbd "C-<") 'er/expand-region)
+(global-set-key (kbd "C-x r i") 'replace-rectangle)
+(global-set-key (kbd "M-y") 'counsel-yank-pop)
 
 
 (provide 'init-defaults)
+
+

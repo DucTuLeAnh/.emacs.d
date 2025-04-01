@@ -191,7 +191,5 @@
 
 (mapcar (lambda (dep) (find-dependency-download-version dep)) (find-deps 'ac-dcd))
 
-;;; so retrieving a dependencies download links is solved
-;;; the next step is to implement the querying of walking down the tree
 
 

@@ -75,6 +75,7 @@
     response))
 
 
+(setq result (apply #'append (mapcar (lambda (x) (list x x)) my-list)))
 
 
 
@@ -91,6 +92,7 @@
       
       )))
 
+(setq result (apply #'append (mapcar (lambda (x) (list x x)) my-list)))
 
 (defun fad2 (root-dep)
   (let* ((local-dependencies (->> (alist-get root-dep test-response)
@@ -101,7 +103,8 @@
 
     (if (not local-dependencies)
 	(list root-dep)
-      (append  (mapcan (lambda (dep) (fad2 (car dep))) local-dependencies) (mapcar (lambda (dep) (car dep)) local-dependencies))
+      (append  (apply #'append (mapcar (lambda (dep) (fad2 (car dep))) local-dependencies))
+	       (mapcar (lambda (dep) (car dep)) local-dependencies))
       
       )))
 

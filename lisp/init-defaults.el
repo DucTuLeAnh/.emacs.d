@@ -23,6 +23,15 @@
 (global-set-key (kbd "C-<") 'er/expand-region)
 (global-set-key (kbd "C-x r i") 'replace-rectangle)
 (global-set-key (kbd "M-y") 'counsel-yank-pop)
+(global-set-key (kbd "C-c r") 'query-replace)
+
+(unless (package-installed-p 'ace-window)
+  (package-install 'ace-window))
+
+(require 'ace-window)
+
+(global-set-key (kbd "M-o") 'ace-window)
+
 
 
 (provide 'init-defaults)

@@ -32,6 +32,17 @@
 
 (global-set-key (kbd "M-o") 'ace-window)
 
+(defun window-with-vterm ()
+  "Split the window below and open vterm."
+  (interactive)
+  (delete-other-windows)
+  (split-window-below)
+  (other-window 1)
+  (vterm))
+
+;; Optional: bind it to a key, for example: C-c v
+(global-set-key (kbd "C-c 2") 'window-with-vterm)
+
 
 (provide 'init-defaults)
 

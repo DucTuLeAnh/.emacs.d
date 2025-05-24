@@ -32,13 +32,17 @@
 
 (global-set-key (kbd "M-o") 'ace-window)
 
+(global-set-key (kbd "C-+") 'enlarge-window)
+
 (defun window-with-vterm ()
   "Split the window below and open vterm."
   (interactive)
   (delete-other-windows)
   (split-window-below)
   (other-window 1)
-  (vterm))
+  (vterm)
+  (other-window 1)
+  (enlarge-window 10))
 
 ;; Optional: bind it to a key, for example: C-c v
 (global-set-key (kbd "C-c 2") 'window-with-vterm)

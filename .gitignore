@@ -10,3 +10,5 @@ custom.el
 .extension/
 recentf
 bookmarks
+eln-cache/
+emacs-libvterm

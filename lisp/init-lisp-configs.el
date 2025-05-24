@@ -28,4 +28,4 @@
 
 
 
-(provide 'init-slime)
+(provide 'init-lisp-configs)

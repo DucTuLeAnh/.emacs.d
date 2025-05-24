@@ -1,7 +1,7 @@
 ; add lisp directory to load path to be able to require all it's scripts
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
+;;(setq custom-file "~/.emacs.d/custom.el")
+;;(load custom-file)
 
 (require 'package)
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -21,6 +21,6 @@
 (require 'init-which-key)
 (require 'init-web-mode)
 (require 'init-company)
-(require 'init-slime)
+(require 'init-lisp-configs)
 (require 'init-lsp)
 (require 'init-vterm)

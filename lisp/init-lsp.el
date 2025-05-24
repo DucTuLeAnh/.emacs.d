@@ -1,12 +1,13 @@
 (unless (package-installed-p 'lsp-mode)
   (package-install 'lsp-mode))
+(unless (package-installed-p 'dap-mode)
+  (package-install 'dap-mode))
 
 (setq lsp-keymap-prefix "C-c l")
 (global-set-key (kbd "C-.") 'lsp-find-references)
 (global-set-key (kbd "C-,") 'lsp-find-definition)
 ;;(setq xref-auto-jump-to-first-xref t)
 (require 'lsp-mode)
-
 
 (require 'dap-mode)
 (require 'dap-ui)

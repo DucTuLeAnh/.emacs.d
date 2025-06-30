@@ -19,6 +19,16 @@
   (package-install 'expand-region))
 
 (require 'expand-region)
+(with-eval-after-load 'expand-region
+  (setq er/try-expand-list
+        '(er/mark-word
+          er/mark-symbol
+          er/mark-symbol-with-prefix
+          er/mark-line
+          er/mark-inside-pairs
+          er/mark-outside-pairs
+          er/mark-paragraph)))
+
 
 (global-set-key (kbd "C-<") 'er/expand-region)
 (global-set-key (kbd "C-x r i") 'replace-rectangle)

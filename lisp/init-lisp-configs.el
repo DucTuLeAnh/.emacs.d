@@ -12,7 +12,7 @@
   (package-install 'rainbow-delimiters))
 
 (require 'slime)
-(setq inferior-lisp-program "/usr/local/bin/sbcl")
+(setq inferior-lisp-program "sbcl")
 
 (require 'paredit)
 (add-hook 'emacs-lisp-mode-hook       'enable-paredit-mode)
